@@ -1,0 +1,49 @@
+.buttons(@bg){
+	background-color: @bg;
+	color: @white-color;
+	padding: 16px 25px;
+	border: none;
+	font-family: @latobold;
+	font-size: 25px;
+	outline: none;
+	-webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.transition{
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.text(@f-size, @w-spacing, @p-bottom){
+	font-size: @f-size;
+	line-height: 37px;
+	word-spacing: @w-spacing;
+	color: #8a8a8a;
+	margin: 0;
+	padding-bottom: @p-bottom;
+	position: relative;
+}
+
+.text-after(@width){
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: @width;
+	background-color: #666;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+			
+			
+			
+

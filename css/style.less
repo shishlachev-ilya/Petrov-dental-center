@@ -1,0 +1,607 @@
+@import 'mixin.less';
+@import 'fonts.css';
+
+/* переменные  для шрифтов */
+@latoblack: 'LatoBlack';
+@latobold: 'LatoBold';
+@latoitalic: 'LatoItalic';
+@latomedium: 'LatoMedium';
+@latoregular: 'LatoRegular';
+
+/* переменные для цветов */
+@main-color: #46b6e3;
+@white-color: #fff;
+@gray-color: #aaaaaa;
+
+/* общие стили */
+.left{
+	float: left;
+}
+a:hover, a:focus, a:visited{
+	text-decoration: none;
+}
+input[type="text"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input[type="text"]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input[type="text"]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input[type="text"]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+/* блок header-contact*/
+.header{
+	.header-contact{
+		
+		.logo-name{
+			font-family: @latobold;
+			color: @main-color;
+			font-size: 20px;
+			text-transform: uppercase;
+			span{
+				display: inline-block;
+				padding-left: 8px;
+				&:first-child{
+					padding-top: 15px;
+				}
+			}//span
+		}//.logo-name
+
+		.logo-address{
+			font-family: @latobold;
+			color: @gray-color;
+			font-size: 20px;
+			margin-bottom: 0;
+			position: relative;
+			&:first-child{
+				padding-top: 28px;
+			}
+			&:first-child:before{
+				content: url(../img/map-marker.png);
+				position: absolute;
+				top: 33px;
+				left: -41px;
+			}
+		}//.logo-address
+
+		.logo-phone{
+			font-family: @latobold;
+			color: @gray-color;
+			.transition;
+			display: block;
+			font-size: 20px;
+			margin-top: 28px;
+			position: relative;
+			&:before{
+				content: url(../img/phone.png);
+				position: absolute;
+				top: 2px;
+				left: -28px;
+			}
+			&:hover{
+				color: @main-color;
+			}
+			&+span{
+				color: @gray-color;
+				padding-left: 18px;
+				position: relative;
+				display: block;
+				.fa-angle-down{
+					border: 1px solid #c6c6c6;
+					padding: 3px 6px;
+					margin-left: 6px;
+					cursor: pointer;
+				}//.fa
+				
+			}//span
+		}//.logo-phone
+		.phone-inner{
+			position: absolute;
+			top: 100%;
+			left: 9%;
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 0;
+			display: none;
+			.phone-item{
+				font-family: @latobold;
+				color: @gray-color;
+				.transition;
+				display: block;
+				font-size: 15px;
+					&:hover{
+						color: @main-color;
+					}
+			}//.phone-item
+		}//.phone-inner
+	}//.header-contact
+
+	#header-content{
+		min-height: 600px;
+		background-image: url(../img/header-content.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		.trigger {
+	    font-size: 30px;
+	    color: #fff;
+	    line-height: 1;
+	    display: none;
+	    cursor: pointer;
+		} //trigger
+		.nav{
+			background-color: rgba(255, 255, 255, .25);
+			.ul-nav{
+				list-style: none;
+				margin-bottom: 0;
+				li{
+					display: inline-block;
+					a{
+						display: block;
+						color: @white-color;
+						.transition;
+						padding: 16px 20px 16px 0;
+						font-family: @latomedium;
+						font-size: 20px;
+						&:hover{
+							color: @main-color;
+						}
+					}//a
+				}//li
+			}//.ul-nav
+		}//.nav
+		.fixed{
+			.transition;
+	    position: fixed;
+	    background-color: @main-color;
+	    z-index: 9999;
+	    padding-left: 10px;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    .ul-nav{
+	    	li{
+	    		a{
+			    	&:hover{
+			    	color: @white-color;
+			    	}
+	    		}//a
+	    	}//li
+	    }//.ul-nav
+		}//.fixed
+		.description{
+			color: @white-color;
+			h2{
+				font-family: @latoregular;
+				font-size: 30px;
+				padding-top: 90px;
+				margin: 0;
+				position: relative;
+				&:after{
+					content: '';
+					width: 145px;
+					height: 1px;
+					background-color: @white-color;
+					position: absolute;
+					top: 135px;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					-ms-transform: translateX(-50%);
+					-o-transform: translateX(-50%);
+					transform: translateX(-50%);
+				}
+			}//h2
+			h1{
+				font-family: @latobold;
+				font-size: 30px;
+				text-transform: uppercase;
+				width: 635px;
+				margin: 0 auto;
+				padding-top: 45px;
+				padding-bottom: 60px;
+			}//h1
+			button#registration{
+				.buttons(@main-color);
+				border: 2px solid @main-color;
+				&:hover{
+					background-color: transparent;
+					border: 2px solid @white-color;
+				}
+			}//button#registration
+			button#question{
+				.buttons(transparent);
+				border: 2px solid @white-color;
+				&:hover{
+					background-color: @main-color;
+					border: 2px solid @main-color;
+				}
+			}//button#question
+			span{
+				font-family: @latoregular;
+				font-size: 25px;
+				color: @white-color;
+				padding: 0 10px;
+			}//span
+		}//.description
+		.squaere-wrapper{
+			margin-top: 70px;
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+			.no-padding{
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.squaere{
+				color: @white-color;
+				text-align: center;
+				min-height: 260px;
+				&-number{
+					font-family: @latoblack;
+					font-size: 42px;
+					padding-top: 20px;
+					padding-bottom: 90px;
+					margin: 0;
+				}//.&-number
+				&-disc{
+					font-family: @latobold;
+					font-size: 15px;
+					padding-bottom: 15px;
+					margin: 0;
+					position: relative;
+					&:after{
+						content: '';
+						position: absolute;
+						height: 1px;
+						width: 103px;
+						background-color: @white-color;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+					}//.after
+				}//.&-disc
+			}//.squaere
+			.odd{
+				background-color: rgba(70, 182, 227, .8);
+			}
+			.even{
+				background-color: rgba(70, 182, 227, .5);
+			}
+		}//.squaere-wrapper
+	}//#header-content
+}//.header
+
+/* секция заказа консультации */
+#consultation{
+	background-color: #ebebeb;
+	.consultation-header{
+		margin: 0;
+		padding-top: 240px;
+		color: @main-color;
+		font-family: @latobold;
+		font-size: 25px;
+	}//.consultation-header
+	input[type="text"]{
+		display: inline-block;
+		width: 366px;
+		height: 56px;
+		border-radius: 10px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		font-family: @latomedium;
+		font-size: 20px;
+		color: #c7c7c7;
+		padding-left: 16px;
+		outline: none;
+		border: none;
+		margin-left: 33px;
+	}//input
+	button[type="submit"]{
+		.buttons(@main-color);
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		border: 2px solid transparent;
+		&:hover{
+			background-color: transparent;
+			color: @main-color;
+			border: 2px solid @main-color;
+		}
+	}//button
+}//#consultation
+
+/* секция о нас */
+#about{
+	background-color: @white-color;
+	.about-header{
+		font-family: @latobold;
+		font-size: 42px;
+		color: #676767;
+		margin: 0;
+		padding-top: 80px;
+		padding-bottom: 37px;
+	}//.about-header
+	.about-text{
+		font-family: @latoregular;
+		.text(21px, 4px, 50px);
+		&:after{
+			.text-after(310px)
+		}
+	}//.about-text
+	.inner{
+		margin-top: 100px;
+		min-height: 365px;
+		.inner-link{
+			display: block;
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			position: relative;
+				.inner-description{
+					.transition;
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+					opacity: 0;
+					background-color: @main-color;
+					h4{
+						font-family: @latoblack;
+						font-size: 21px;
+						color: @white-color;
+						margin: 0;
+						padding-top: 20px;
+						padding-left: 20px;
+					}//h4
+					p{
+						font-family: @latomedium;
+						font-size: 13px;
+						color: @white-color;
+						padding-left: 20px;
+						padding-top: 30px;
+						margin: 0;
+						text-align: left;
+					}//p
+					a{
+						display: inline-block;
+						padding: 6px 8px;
+						color: @white-color;
+						font-family: @latobold;
+						margin-left: 20px;
+						margin-top: 10px;
+						border: 2px solid @white-color;
+						.transition;
+						&:hover{
+							color: @main-color;
+							background-color: @white-color;
+						}
+					}//a
+				}//.inner-description
+			&:hover .inner-description{
+				opacity: .73;
+			}	
+		}//.inner-link
+		p{
+			font-family: @latoregular;
+			text-align: center;
+			font-size: 17px;
+			padding-top: 12px;
+			color: @gray-color;
+		}//p
+	}//.inner
+	.m-top{
+		margin-top: 35px;
+	}
+}//#about
+
+/* секция о достижениях */
+#progress{
+	background-image: url(../img/progress-bg.jpg);
+	background-size: cover;
+	min-height: 355px;
+	margin-top: 80px;
+	text-align: center;
+	.progress-header{
+		font-family: @latoblack;
+		font-size: 28px;
+		color: @white-color;
+		margin: 0;
+		padding-top: 85px;
+		padding-bottom: 100px;
+	}//.progress-header
+	.progress-link{
+		.buttons(@main-color);
+		border: 2px solid @main-color;
+		.fa{
+			margin-left: 7px;
+		}//.fa
+		&:hover{
+			background-color: transparent;
+			color: @white-color;
+			border: 2px solid @white-color;
+		}//hover
+	}//.progress-link
+}//#progress
+
+/* секция наши специалисты */
+#team{
+	text-align: center;
+	.team-header{
+		font-family: @latobold;
+		font-size: 42px;
+		color: #676767;
+		margin: 0;
+		padding-top: 80px;
+		padding-bottom: 37px;
+	}//.about-header
+	.team-text{
+    font-family: @latoregular;
+    .text(27px, 4px, 30px);
+		&:after{
+			.text-after(210px);
+		}
+	}//.about-text
+	.team-slider{
+		margin-top: 60px;
+		.person-wrapper{
+			outline: none;
+			.person{
+				height: 252px;
+				width: 252px;
+				margin: 0 auto;
+				a{
+					outline: none;
+				}
+			}//.person
+			.person-name{
+					font-size: 25px;
+					color: @gray-color;
+					.person-fio{
+						font-family: @latobold;
+						margin-top: 30px;
+					}//.person-fio
+					p{
+						font-family: @latoitalic;
+					}//p
+				}//.person-name		
+		}//.person-wrapper
+	}//.team-slider
+}//#team
+
+/* секция как к нам добраться */
+#map{
+	min-height: 400px;
+	margin-top: 70px;
+	background-image: url(../img/map.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	h2{
+		font-size: 34px;
+		font-family: @latomedium;
+		padding: 20px 30px;
+		background-color: @white-color;
+		display: inline-block;
+		margin-top: 50px;
+	}//h2
+}//#map
+
+/* подвал сайта */
+.footer{
+	background-color: #f3f3f3;
+	p{
+		font-family: @latoitalic;
+		font-size: 21px;
+		color: @gray-color;
+		padding: 30px 0 30px 55px;
+		margin-bottom: 0;
+		a{
+			color: @main-color;
+			&:hover{
+				text-decoration: underline;
+			}
+		}//a
+	}//p
+	.social{
+		display: inline-block;
+		width: 23px;
+		height: 23px;
+		background-color: #aaaaaa;
+		margin-top: 27px;
+		margin-left: 8px;
+		text-align: center;
+		line-height: 23px;
+		color: @white-color;
+		&:first-child{
+			margin-left: 70px;
+		}
+		&:hover{
+			background-color: @main-color;
+		}
+	}//.social
+}//.footer
+
+/* стили для модальных окон */
+#registration-doctor, #question-doctor, #vanessa, #victor, #aleksandr{
+	background: rgba(0, 0, 0, 0.5);
+	.modal-header, .modal-footer{
+		border: none;
+		background-color: #ebebeb;
+		p{
+			text-align: center;
+			font-family: @latoitalic;
+			color: @gray-color;
+			font-size: 21px;
+		}
+	}//.modal-header, .modal-footer
+	.modal-title{
+		margin: 0;
+    line-height: 1.42857143;
+    color: @main-color;
+    font-family: @latobold;
+    font-size: 35px;
+    text-align: center;
+	}//.modal-title
+	.modal-body{
+		background-color: #ebebeb;
+		text-align: center;
+		input[type="text"]{
+	    display: inline-block;
+	    width: 450px;
+	    height: 56px;
+	    border-radius: 10px;
+	    margin-bottom: 30px;
+	    font-family: 'LatoMedium';
+	    font-size: 20px;
+	    color: @main-color;
+	    padding-left: 16px;
+	    outline: none;
+	    border: none;
+	    background-color: @white-color;
+	    &::-webkit-input-placeholder {color: @main-color;}
+			&:-moz-placeholder {color: @main-color;}
+			&::-moz-placeholder {color: @main-color;}
+			&:-ms-input-placeholder {color: @main-color;}
+		}//input
+		button[type="submit"]{
+			.buttons(@main-color);
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			border: 2px solid transparent;
+			padding: 16px 65px;
+			&:hover{
+				background-color: transparent;
+				color: @main-color;
+				border: 2px solid @main-color;
+			}
+		}//button
+		p{
+			.text(20px, 0, 0);
+		}
+	}//.modal-body
+	.modal-footer{
+		button[type="button"]{
+			display: inline-block;
+			padding: 6px 8px;
+			color: @main-color;
+			font-family: @latobold;
+			margin-left: 20px;
+			margin-top: 10px;
+			border: 2px solid @main-color;
+			background-color: #ebebeb;
+			.transition;
+			&:hover{
+				color: @white-color;
+				background-color: @main-color;
+			}	
+		}//type="button"
+	}//.moda-footer
+}//#registration-doctor, #question-doctor, #vanessa, #victor, #aleksandr
+
+#vanessa, #victor, #aleksandr{
+	margin-top: 55px;
+}
+

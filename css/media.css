@@ -1,0 +1,507 @@
+
+@media (min-width: 320px) and (max-width: 480px){
+	*{
+		transition: all .3s;
+	}
+	.header #header-content .description h2{
+		font-size: 21px;
+    padding-top: 35px;
+	}
+	.header #header-content .description h2:after{
+		top: 93px;
+	}
+	.header #header-content .description span{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.header #header-content .nav .ul-nav{
+	  display: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+		z-index: 999;
+		padding-left: 0;
+	}
+	.header #header-content .nav .ul-nav li{
+		background-color: #46b6e3;
+		width: 100%;
+		text-align: center;
+	}
+	.header #header-content .trigger {
+    font-size: 34px;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+	}
+	.header #header-content .nav .ul-nav li a:hover{
+		color: #fff;
+	}
+	.header .header-contact .phone-inner{
+		left: 23%;
+	}
+	.header .header-contact .phone-inner .phone-item{
+		font-size: 10px;
+	}
+	.header #header-content .nav .ul-nav li a{
+		font-size: 18px;
+	}
+	.header #header-content .description h1{
+		font-size: 17px;
+		text-align: center;
+		width: 100%;
+	}
+	.header #header-content .description button#registration,
+	.header #header-content .description button#question{
+		font-size: 20px;
+		padding: 13px;
+	}
+	.header #header-content{
+		background-position: center;
+	}
+	#consultation .consultation-header{
+		padding-top: 40px;
+		padding-bottom: 30px;
+		font-size: 21px;
+	}
+	#consultation input[type="text"]{
+		margin-left: 0;
+		margin-top: 0;
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	#consultation button[type="submit"]{
+		padding: 14px;
+		font-size: 14px;
+	}
+	#registration-doctor .modal-body input[type="text"], 
+	#question-doctor .modal-body input[type="text"], 
+	#vanessa .modal-body input[type="text"], #victor 
+	.modal-body input[type="text"], 
+	#aleksandr .modal-body input[type="text"]{
+		width: 90%;
+	}
+	#registration-doctor .modal-body button[type="submit"], 
+	#question-doctor .modal-body button[type="submit"], 
+	#vanessa .modal-body button[type="submit"], #victor 
+	.modal-body button[type="submit"], 
+	#aleksandr .modal-body button[type="submit"]{
+		padding: 16px;
+		font-size: 20px;
+	}
+	#registration-doctor .modal-title, 
+	#question-doctor .modal-title, 
+	#vanessa .modal-title, 
+	#victor .modal-title, 
+	#aleksandr .modal-title{
+		font-size: 25px;
+		padding-top: 20px;
+	}
+	#about .about-header{
+		font-size: 25px;
+		padding-top: 55px;
+		padding-bottom: 20px;
+	}
+	#about .about-text{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	#about .about-text:after{
+		width: 85px;
+	}
+	#about .inner p{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#progress .progress-header {
+	  font-size: 17px;
+	  margin: 0 auto;
+	  padding-top: 70px;
+	  padding-bottom: 55px;
+	}
+	#progress{
+		background-position: center;
+	}
+	#team .team-header{
+		font-size: 25px;
+		padding-top: 40px;
+		padding-bottom: 16px;
+	}
+	#team .team-text{
+		font-size: 16px;
+		word-spacing: 2px;
+		line-height: 20px;
+	}
+	#team .team-text:after{
+		width: 95px;
+	}
+	#team .team-slider .person-wrapper .person-name .person-fio{
+		font-size: 17px;
+	}
+	#team .team-slider .person-wrapper .person-name p{
+		font-size: 12px;
+	}
+	#map h2{
+		font-size: 21px;
+	}
+	.footer .social-xs{
+	  text-align: center;
+	}	
+	.footer .social-xs .social:hover{
+		background-color: #46b6e3;
+	}
+	.footer .social:first-child{
+		margin: 0;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	.footer .social{
+		margin: 0;
+		margin-top: 0;
+		margin-bottom: 15px;
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+	}
+	#services{
+		padding-top: 50px;
+	}
+	.slick-next{
+		right: 8px;
+		z-index: 100;
+	}
+	.slick-prev{
+		left: 8px;
+		z-index: 100;
+	}
+	.footer p{
+	  padding-left: 0;
+	  font-size: 10px;
+	  text-align: center;
+	  padding-bottom: 10px;
+	}
+	#registration-doctor .modal-title,
+	#question-doctor .modal-title,
+	#vanessa .modal-title,
+	#victor .modal-title,
+	#aleksandr .modal-title {
+	  font-size: 22px;
+	  padding-top: 24px;	
+	}
+	#registration-doctor .modal-body p,
+	#question-doctor .modal-body p,
+	#vanessa .modal-body p,
+	#victor .modal-body p,
+	#aleksandr .modal-body p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+	#progress .progress-link{
+		padding: 13px;
+		font-size: 14px;
+	}
+	#about .inner .inner-link .inner-description p{
+		padding-top: 10px;
+	}
+	
+	
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+	*{
+		transition: all .3s;
+	}
+	.header .header-contact .logo img{
+		height: 85px;
+	}
+	.header .header-contact .logo-name{
+		font-size: 12px;
+	}
+	.header .header-contact .logo-address{
+		font-size: 13px;
+	}
+	.header .header-contact .logo-address:first-child {
+    padding-top: 23px;
+	}
+	.header .header-contact .logo-address:first-child:before{
+		top: 16px;
+	}
+	.header .header-contact .logo-phone{
+		font-size: 16px;
+		margin-top: 18px;
+	}
+	.header .header-contact .logo-phone + span{
+		font-size: 11px;
+	}
+	.header .header-contact .phone-inner{
+		left: 23%;
+	}
+	.header .header-contact .phone-inner .phone-item{
+		font-size: 10px;
+	}
+	.header #header-content .nav .ul-nav li a{
+		font-size: 18px;
+	}
+	.header #header-content .description h2{
+		font-size: 28px;
+		padding-top: 50px;
+	}
+	.header #header-content .description h2:after{
+		top: 97px;
+	}
+	.header #header-content .description span{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#registration-doctor .modal-body input[type="text"], 
+	#question-doctor .modal-body input[type="text"], 
+	#vanessa .modal-body input[type="text"], #victor 
+	.modal-body input[type="text"], 
+	#aleksandr .modal-body input[type="text"]{
+		width: 350px;
+	}
+	.header #header-content .description h1{
+		font-size: 27px;
+		text-align: center;
+		width: 100%;
+	}
+	.header #header-content .description button#registration,
+	.header #header-content .description button#question{
+		font-size: 22px;
+	}
+	.header #header-content .nav .ul-nav{
+	  display: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+		z-index: 999;
+		padding-left: 0;
+	}
+	.header #header-content .nav .ul-nav li{
+		background-color: #46b6e3;
+		width: 100%;
+		text-align: center;
+	}
+	.header #header-content .trigger {
+    font-size: 34px;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+	}
+	.header #header-content .nav .ul-nav li a:hover{
+		color: #fff;
+	}
+	#consultation .consultation-header{
+		padding-top: 85px;
+		padding-bottom: 50px;
+	}
+	#consultation input[type="text"]{
+		margin-top: 0;
+	}
+
+	#consultation input[type="text"]{
+		margin-left: 0;
+		margin-top: 0;
+	}
+	#consultation button[type="submit"]{
+		padding: 14px 10px;
+		font-size: 23px;
+	}
+	.footer p{
+		text-align: center;
+		font-size: 17px;
+		padding: 10px;
+	}
+	.footer .social{
+		text-align: center;
+	}
+	#about .inner{
+		margin-top: 50px;
+		height: 340px;
+	}
+	#progress .progress-header{
+		font-size: 22px;
+	}
+	#progress .progress-link{
+		padding: 13px 16px;
+		font-size: 21px;
+	}
+	.slick-next{
+		right: 45px;
+		z-index: 100;
+	}
+	.slick-prev{
+		left: 45px;
+		z-index: 100;
+	}
+	.footer .social:first-child{
+		margin-left: 0;
+	}
+	.footer .social{
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	#map h2{
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+	*{
+		transition: all .3s;
+	}
+	.header .header-contact .logo img{
+		height: 85px;
+	}
+	.header .header-contact .logo-name{
+		font-size: 12px;
+	}
+	.header .header-contact .logo-address{
+		font-size: 13px;
+	}
+	.header .header-contact .logo-address:first-child {
+    padding-top: 23px;
+	}
+	.header .header-contact .logo-address:first-child:before{
+		top: 16px;
+	}
+	.header .header-contact .logo-phone{
+		font-size: 16px;
+		margin-top: 18px;
+	}
+	.header .header-contact .logo-phone + span{
+		font-size: 11px;
+	}
+	.header .header-contact .phone-inner{
+		left: 23%;
+	}
+	.header .header-contact .phone-inner .phone-item{
+		font-size: 10px;
+	}
+	.header #header-content .nav .ul-nav li a{
+		font-size: 18px;
+	}
+	.header #header-content .description h2{
+		font-size: 28px;
+	}
+	.header #header-content .description h1{
+		font-size: 30px;
+	}
+	.header #header-content .description button#registration,
+	.header #header-content .description button#question{
+		font-size: 22px;
+	}
+	.header #header-content .nav .ul-nav{
+	  display: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+		z-index: 999;
+		padding-left: 0;
+	}
+	.header #header-content .nav .ul-nav li{
+		background-color: #46b6e3;
+		width: 100%;
+		text-align: center;
+	}
+	.header #header-content .trigger {
+    font-size: 34px;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+	}
+	.header #header-content .nav .ul-nav li a:hover{
+		color: #fff;
+	}
+	#consultation .consultation-header{
+		padding-top: 85px;
+		padding-bottom: 50px;
+	}
+	#consultation input[type="text"]{
+		margin-top: 0;
+	}
+
+	#consultation input[type="text"]{
+		margin-left: 0;
+		margin-top: 0;
+	}
+	#consultation button[type="submit"]{
+		padding: 14px 10px;
+		font-size: 23px;
+	}
+	.footer p{
+		padding-left: 0;
+		font-size: 19px;
+	}
+	#about .inner{
+		margin-top: 50px;
+		height: 340px;
+	}
+	.slick-next {
+    right: 100px;
+    z-index: 100;
+	}
+	.slick-prev {
+    left: 45px;
+    z-index: 100;
+	}
+	
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	*{
+		transition: all .3s;
+	}
+	.header .header-contact .logo img{
+		height: 100px;
+	}
+	.header .header-contact .logo-name{
+		font-size: 16px;
+	}
+	.header .header-contact .logo-address{
+		font-size: 17px;
+	}
+	.header .header-contact .logo-address:first-child {
+    padding-top: 25px;
+	}
+	.header .header-contact .logo-address:first-child:before{
+		top: 26px;
+	}
+	.header .header-contact .logo-phone{
+		font-size: 17px;
+		margin-top: 26px;
+	}
+	.header .header-contact .logo-phone + span{
+		font-size: 15px;
+	}
+	.header .header-contact .logo-phone + span .fa-angle-down{
+		margin-left: 3px;
+	}
+	.header .header-contact .phone-inner{
+		left: 23%;
+	}
+	.header .header-contact .phone-inner .phone-item{
+		font-size: 11px;
+	}
+	.header #header-content .trigger{
+		display: none;
+	}
+	.footer p{
+		font-size: 19px;
+	}
+	#about .inner{
+		margin-top: 50px;
+		height: 340px;
+	}
+
+}

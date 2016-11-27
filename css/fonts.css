@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('fonts/LatoRegular.eot');
+    src: url('fonts/LatoRegular.eot') format('embedded-opentype'),
+         url('fonts/LatoRegular.woff2') format('woff2'),
+         url('fonts/LatoRegular.woff') format('woff'),
+         url('fonts/LatoRegular.ttf') format('truetype'),
+         url('fonts/LatoRegular.svg#LatoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'LatoMedium';
+    src: url('fonts/LatoMedium.eot');
+    src: url('fonts/LatoMedium.eot') format('embedded-opentype'),
+         url('fonts/LatoMedium.woff2') format('woff2'),
+         url('fonts/LatoMedium.woff') format('woff'),
+         url('fonts/LatoMedium.ttf') format('truetype'),
+         url('fonts/LatoMedium.svg#LatoMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'LatoItalic';
+    src: url('fonts/LatoItalic.eot');
+    src: url('fonts/LatoItalic.eot') format('embedded-opentype'),
+         url('fonts/LatoItalic.woff2') format('woff2'),
+         url('fonts/LatoItalic.woff') format('woff'),
+         url('fonts/LatoItalic.ttf') format('truetype'),
+         url('fonts/LatoItalic.svg#LatoItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('fonts/LatoBold.eot');
+    src: url('fonts/LatoBold.eot') format('embedded-opentype'),
+         url('fonts/LatoBold.woff2') format('woff2'),
+         url('fonts/LatoBold.woff') format('woff'),
+         url('fonts/LatoBold.ttf') format('truetype'),
+         url('fonts/LatoBold.svg#LatoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'LatoBlack';
+    src: url('fonts/LatoBlack.eot');
+    src: url('fonts/LatoBlack.eot') format('embedded-opentype'),
+         url('fonts/LatoBlack.woff2') format('woff2'),
+         url('fonts/LatoBlack.woff') format('woff'),
+         url('fonts/LatoBlack.ttf') format('truetype'),
+         url('fonts/LatoBlack.svg#LatoBlack') format('svg');
+}
